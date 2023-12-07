@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Pulse</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\style.css"/>
+    <script src="scripts\locationData.js"></script>
+    <script src="scripts\nationalParkData.js"></script>
+    <script src="scripts\parkTypeData.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary divider" id="navBar">
+        <div class="container-fluid">
+         <img
+           class="logo"
+           src="images\tree-circle-logo-v2-01.jpg"
+           alt="logo"
+          />
+          <a class="navbar-brand ms-3 nav-name" href="#">Nature Pulse</a>
+          <button class="navbar-toggler small-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor04">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" href="nationalPark.html">National Parks
+                    <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="mountain.html">Mountains Info</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="row row-cols-2 ms-5">
+        <form id="form" class="w-25 ms-5 side mt-4">
+            <div class="form-group ms-1">
+                <label class="form-label mt-5"></label>
+                <select class="form-select" id="selectLocation">
+                  <option>All Locations</option>
+                </select>
+              </div>
+              <div class="form-group ms-1">
+                <label class="form-label mt-5 mb-5"></label>
+                <select class="form-select mt-5 mb-5" id="selectType">
+                  <option>All Park Types</option>
+                </select>
+              </div>
+        </form>
+        <div class="scroll-container me-4 ms-3 mt-4 w-75">
+            <p class="mt-2 pick">Pick the Perfect Park!</p>
+            <div class="ms-5" id="displayParks">
+            </div>
+        </div>
+      </main>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

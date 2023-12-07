@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Pulse</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\style.css"/>
+    <script src="scripts\mountainData.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary divider" id="navBar">
+        <div class="container-fluid">
+         <img
+           class="logo"
+           src="images\tree-circle-logo-v2-01.jpg"
+           alt="logo"
+          />
+          <a class="navbar-brand ms-3 nav-name" href="#">Nature Pulse</a>
+          <button class="navbar-toggler small-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor04">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="nationalPark.html">National Parks</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" href="mountain.html">Mountains Info
+                    <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/carousel-1.jfif" alt="First slide">
+              </div>
+              <div class="carousel-item ">
+                <img class="d-block w-100" src="images/carousel-4.jfif" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/carousel-6.jfif" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+            </a>
+            </div>
+         </div>
+         <div class="ms-5 me-5 para1">
+            <p class="ms-5 me-5">
+                Mountains, majestic and awe-inspiring, stand as Earth's timeless sentinels, reaching towards the heavens with rugged grandeur. These colossal landforms, characterized by towering peaks and vast landscapes, have captivated human imagination for centuries. Mountains not only command breathtaking views but also harbor diverse ecosystems, playing a crucial role in shaping regional climates and providing habitats for unique flora and fauna.
+            </p>
+        </div>
+      </section>
+      <section>
+            <form id="form" class="middle">
+                <div class="form-group ms-1">
+                    <label class="form-label mt-5"></label>
+                    <select class="form-select" id="selectMountain">
+                      <option>Select A Mountain</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+      <main class="row row-cols-3 mt-5">
+        <section class="w-25 nothing">
+            <p>
+                hello
+            </p>
+        </section>
+        <section class="w-50" id="displayMountainInfo">
+            
+        </section>
+        <section class="w-25 nothing">
+            <p>
+                hello
+            </p>
+        </section>
+
+      </main>
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
